@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <style>
+        
+    /*form*/
+    div
+    {
+        width: 300px;
+        padding: 20px;
+        border: 3px solid red;
+        border-radius: 12px;
+    }
+
+    /*button styling*/
+    .regbtn  
+    {
+        background-color: deepskyblue;
+        color:antiquewhite;
+        padding:10px 8px;
+        border-radius:12px;
+        transition-duration: 0.4s;
+        width: 100px;
+    }
+    
+    .regbtn:hover
+    {
+        background-color: antiquewhite;
+        color:deepskyblue;
+    } 
+
+    /*heading*/
+    .heading
+    {
+        font-family:'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-weight: bold;
+    }
+
+    form label
+    {
+        font-size: 1rem;
+        margin-top: 0fr;  
+    }
+    </style>
+    
+    
+    <h1 class =heading><center>REGISTRATION</center></h1>
+    <center>
+    <div>
+    <form >
+       
+        <label for="name">Name</label>
+        <input type="name" placeholder="enter name" id="name" name="name" required><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="enter email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" placeholder="enter dob" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" placeholder="enter phone number" id="phone" name="phone"required><br><br>
+        
+        <label for="password">Password</label>
+        <input type="password" placeholder="enter password" id="password" name="password" required><br><br>
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+        
+        <button class="regbtn"><a href="welcome.html">Register</a></button>
+        <button class="regbtn" type="reset">Reset</button>
+        
+    </form>
+    </div>
+
+</center>
+    
+</body>
+</html>

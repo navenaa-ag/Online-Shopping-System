@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body 
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Create a column layout with Flexbox */
+.row 
+{
+  display: flex;
+}
+
+/* Left column (menu) */
+.left 
+{
+  flex: 25%;
+  padding: 15px 0;
+}
+
+.left h2 
+{
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right 
+{
+  flex: 75%;
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 10px;
+}
+
+/* Style the search box */
+#mySearch 
+{
+  width: 100%;
+  font-size: 14px;
+  padding: 8px;
+  border: 4px solid yellow;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu 
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a 
+{
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover 
+{
+  background-color:yellow;
+}
+
+.marquee
+{
+  font-family: cursive;
+  font-size: 30px;
+  color: red;
+  font-style: italic;
+  
+}
+
+div.a 
+{
+  line-height: 200%;
+  text-indent: 50px;
+}
+
+div.b 
+{
+  line-height: 200%;
+  text-indent: 50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<marquee class="marquee">Hurry !!! The sale is on !!!!</marquee>
+
+<div class="row">
+  <div class="left" style="background-color: turquoise">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" placeholder="Search.." >
+    <ul id="myMenu">
+      <li><a href="men.html">Men</a></li>
+      <li><a href="women.html">Women</a></li>
+      <li><a href="#">Boys</a></li>
+      <li><a href="#">Girls</a></li>
+      <li><a href="#">Toddlers</a></li>
+      <li><a href="#">Infants</a></li>
+      <li><a href="#">Home essentials</a></li>
+      <li><a href="#">Books & Toys</a></li>
+      <li><a href="#">Offers & Deals</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color: rgb(195, 237, 233);">
+    <h2>About the brand..</h2>
+      <div class="a"><b>Clothing Palette</b> is a contemporary clothing brand known for its trend-driven styles with 
+      affordable prices. Drawing inspiration from the latest trends, from street style to runway,Clothing Palette brand 
+      offers an array of styles that is fit for the fashion loving girl.From workwear to street style, night out, Clothing Palette 
+      label can keep you going from day-to-night.Shop the latest collection from Clothing Palette,ranging in dresses to tops...
+      If you were hoping to fly under everyone's radar, you'd better pick another dress..
+      </div>
+
+    <h2>About Us..</h2>
+       <div class="b"><b>Clothing Palette</b> is an eco-friendly Indian fashion company established and managed by our team. We have been 
+       working in the fashion industry for past few years.. We design and produce our own products in our factory..
+       Our entire production is proudly made.. Because of our expertise in manufacturing, we produce garments for various occasions..
+       </div>
+  </div>
+</div>
+
+
+</body>
+</html>
